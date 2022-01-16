@@ -19,29 +19,34 @@
     <!-- bootstrap tiene 3 partes fundamentales para escribir su codigo
     
     primero nos habla de un contenedor, container o container-fluid-->
-
-    <header class="container-fluid">
+    <div class="container-fluid">
+    <header class="row">
         <a href="./bodega.html">BODEGA</a>
         <!-- segundo paso para crear la estructura es utilzar la class row -->
-        <div class="row">
+        <div class="col-6">
             <!-- que cada "hijo" de la row tenga la class col- mas la medida-->
             <img src="img/bodega-1.jpg" alt="BODEGA" class="img col-sm-6 col-md-6">
-        <h1 class="col-sm-6 col-md-6">
+        </div>
+        <h1 class="col-6">
             hola mundo
         </h1>
-        </div>
+        
     </header>
 
     <!-- contenido principal -->
-    <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat quia, unde totam modi porro, suscipit
+    <main class="row">
+        <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat quia, unde totam modi porro, suscipit
             corporis distinctio ex culpa voluptates possimus tempora cumque nam eum ratione nulla assumenda officia
             obcaecati hic molestias voluptatum ea. Possimus odio quasi pariatur illo.</p>
     </main>
-    <footer>
-
+    <footer class="row">
+        <a class="col-4" href="https://www.Facebook.com/"> Facebook </a>
+        <a class="col-4" href="https://www.instagram.com"> Instagram </a>
+        <a class="col-4" href="https://www.youtube.com"> Youtube </a>
     </footer>
-
+    </div>
+     <!-- link js bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
