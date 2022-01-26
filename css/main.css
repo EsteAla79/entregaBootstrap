@@ -23,6 +23,7 @@ footer{
 .img{
     width: 50%;
     background-color: wheat;
+    justify-self: center;
 }
 
 .grilla{
@@ -72,7 +73,7 @@ footer{
     align-items: center;
     background-color: wheat;
     grid-area: seccion2;
-
+    
 }
 
 .item1{
@@ -103,4 +104,41 @@ footer{
     background-color: wheat;
     grid-area: footer;
 
+} 
+
+.rotate{
+    background-color: cornflowerblue;
+    color: white;
+    border: 3px solid black;
+    height: 250px;
+    width: 250px;
+}
+
+.rotate:hover{
+    background-color: brown;
+    color: whitesmoke;
+    width: 350px;
+    transition: background-color 3s, height 3s;
+}
+
+@media (max-width: 768px){
+    .grilla{
+        background-color: wheat;
+        
+    }
+    .seccion2{
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-row-gap: 10px;
+    }
+}
+
+@media (max-width: 575px){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
 }
