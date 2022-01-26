@@ -2,31 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}    
+}
 
-header{
+header {
     background-color: wheat;
 }
 
-main{
+main {
     background-color: wheat;
 }
 
-section{
+section {
     background-color: wheat;
 }
 
-footer{
+footer {
     background-color: wheat;
 }
 
-.img{
+.img {
     width: 50%;
     background-color: wheat;
     justify-self: center;
 }
 
-.grilla{
+.grilla {
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: repeat(4, 25vh);
@@ -73,22 +73,22 @@ footer{
     align-items: center;
     background-color: wheat;
     grid-area: seccion2;
-    
+
 }
 
-.item1{
+.item1 {
     justify-self: center;
 }
 
-.item2{
+.item2 {
     justify-self: flex-end;
 }
 
-.item3{
+.item3 {
     justify-self: start;
 }
 
-.item4{
+.item4 {
     justify-self: center;
 }
 
@@ -104,9 +104,9 @@ footer{
     background-color: wheat;
     grid-area: footer;
 
-} 
+}
 
-.rotate{
+.rotate {
     background-color: cornflowerblue;
     color: white;
     border: 3px solid black;
@@ -114,19 +114,20 @@ footer{
     width: 250px;
 }
 
-.rotate:hover{
+.rotate:hover {
     background-color: brown;
     color: whitesmoke;
     width: 350px;
     transition: background-color 3s, height 3s;
 }
 
-@media (max-width: 768px){
-    .grilla{
+@media (max-width: 768px) {
+    .grilla {
         background-color: wheat;
-        
+
     }
-    .seccion2{
+
+    .seccion2 {
         height: auto;
         width: auto;
         display: flex;
@@ -136,8 +137,8 @@ footer{
     }
 }
 
-@media (max-width: 575px){
-    .header{
+@media (max-width: 575px) {
+    .header {
         display: flex;
         flex-direction: column;
     }
